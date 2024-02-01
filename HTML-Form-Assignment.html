@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Form</title>
+    <title>Car rental form</title>
 </head>
+
 <body>
-    
+    <h1>Car Rental Form</h1>
+    <form action="not_a_real_page.php" method="get">
+        <!-- using the get because we are not sending any sensitive information -->
+        <fieldset>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="phone">Phone:</label><br>
+            <input type="text" id="phone" name="phone"><br>
+
+            <label for="dateofbirth">Date of Birth:</label><br>
+            <input type="date" id="dateofbirth" name="dateofbirth"><br>
+
+            <Label for="cartype">Car Type:</Label><br>
+            <select id="cartype" name="cartype">
+                <option value="Small Sedan">Small Sedan</option>
+                <option value="SUV">SUV</option>
+                <option value="SuperCar">SuperCar</option>
+                <option value="ElectricCar">ElectricCar</option>
+            </select><br>
+
+            <label for="quantity">Rental Duration (in days):</label><br>
+            <input type="number" id="quantity" name="quantity"><br>
+
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1">Add Comprehensive Insurance Coverage:</label><br>
+
+            <label for="rentalstartdate">Rental Start Date:</label><br>
+            <input type="date" id="rentalstartdate" name="rentalstartdate"><br>
+            <label for="rentalenddate">Rental End Date:</label><br>
+            <input type="date" id="rentalenddate" name="rentalenddate"><br>
+
+            <label for="comment">Additional Comments:</label><br>
+            <textarea id="comment" name="message" rows="3" cols="20"></textarea><br>
+
+            <label for="myfile">Upload Driving License:</label><br>
+            <input type="file" id="myfile" name="myfile"><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
 </body>
+
 </html>
